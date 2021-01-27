@@ -1,8 +1,9 @@
-# ReactTakeHomeTest
+# React Take Home Test
 #### React Take Home Challenge for prospective hires
+This repository should be fairly simple to get running locally if you have experience with react (project was created with the `npx create-react-app` command). (`npm start` command will get the project running once you have installed all dependencies)
+
 
 ---
-This repository should be fairly simple to get running locally if you have experience with react (project was created with the `npx create-react-app` command). (`npm start` command will get the project running once you have installed all dependencies)
 
 
 ## Challenge Requirements:
