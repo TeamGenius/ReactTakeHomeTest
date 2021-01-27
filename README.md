@@ -29,6 +29,7 @@ This repository should be fairly simple to get running locally if you have exper
 
 ### Here are some tips:
 - I only expect you to make changes to the `src/App.js` file, however you are more than welcome to edit any file that you would like or create new files as you see fit
+- no, you do not need to have any sorting on the table columns, nor do you need to implement any search functionality. Just a paginated table and a summary display.
 - I am not concerned with styling, no need to style anything at all in fact. If you want to, feel free, but it bears no weight on the requirements!
 - keep it simple, don't over-think it
 - I'm really only looking for understanding of react, i.e. handling button clicks, state manipulation, etc
