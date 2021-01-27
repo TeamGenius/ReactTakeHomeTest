@@ -6,6 +6,7 @@
 This repository should be fairly simple to get running locally if you have experience with react. (`npm start` command will get the project running once you have installed all dependencies)
 
 ## Challenge Requirements:
+- firstly: fork this repository
 - using the data from the `_players.json` file, create a table that has the following columns for each record (order of columns does not matter):
    - Player Name
    - Player Image 
@@ -22,6 +23,7 @@ This repository should be fairly simple to get running locally if you have exper
       - the 'next' button should disappear or disable
       - the table should contain the remaining player records (there should be 96 records in the file, so 6 results are expected)
 - clicking on a row in the table should show that players data in a summary view somewhere on the page
+- finally: submit a pull request
 
 
 
