@@ -2,24 +2,16 @@ export const PLAYER_TABLE_DISPLAY_LIMIT = 10
 
 export const playersTableColumns = [
   {
-    display: 'First Name',
-    key: 'nameFirst',
-  },
-  {
-    display: 'Last Name',
-    key: 'nameLast',
-  },
-  {
-    display: 'Image',
+    display: '',
     key: 'picture',
   },
   {
-    display: 'Email',
-    key: 'email',
+    display: 'First',
+    key: 'nameFirst',
   },
   {
-    display: 'Phone',
-    key: 'phone',
+    display: 'Last',
+    key: 'nameLast',
   },
   {
     display: 'Organization',
@@ -32,5 +24,13 @@ export const playersTableColumns = [
   {
     display: 'Handedness',
     key: 'handedness',
+  },
+  {
+    display: 'Email',
+    key: 'email',
+  },
+  {
+    display: 'Phone',
+    key: 'phone',
   }
 ]

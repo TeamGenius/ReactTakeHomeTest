@@ -44,7 +44,11 @@ const App = () => {
         {playersToDisplay.map(player => {
           return (
             <tr onClick={() => setPlayerSummary(player)}>
-              {playersTableColumns.map(header => <td>{player[header.key]}</td>)}
+              {playersTableColumns.map(header => {
+                return header.key === 'picture' ? 
+                  <img src={player.picture} width="32" height="32"/> :
+                  <td>{player[header.key]}</td> 
+              })}
             </tr>
           )
         })}
