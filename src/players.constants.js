@@ -27,10 +27,10 @@ export const playersTableColumns = [
   },
   {
     display: 'Position',
-    key: 'organization',
+    key: 'position',
   },
   {
     display: 'Handedness',
-    key: 'organization',
+    key: 'handedness',
   }
 ]
