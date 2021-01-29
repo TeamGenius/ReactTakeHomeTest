@@ -37,17 +37,17 @@ const App = () => {
       <table>
         <thead>
           <tr>
-            {playersTableColumns.map(header => <th>{header.display}</th>)}
+            {playersTableColumns.map(header => <th key={header.key}>{header.display}</th>)}
           </tr>
         </thead>
         <tbody>
         {playersToDisplay.map(player => {
           return (
-            <tr onClick={() => setPlayerSummary(player)}>
+            <tr key={`${player.email}`} onClick={() => setPlayerSummary(player)}>
               {playersTableColumns.map(header => {
                 return header.key === 'picture' ? 
-                  <img src={player.picture} width="32" height="32"/> :
-                  <td>{player[header.key]}</td> 
+                  <td key={`${header.key}-${player.picture}`}><img alt='player' src={player.picture} width="32" height="32"/></td> :
+                  <td key={`${header.key}-${player[header.key]}`}>{player[header.key]}</td> 
               })}
             </tr>
           )
@@ -63,7 +63,7 @@ const App = () => {
           {playerSummary ? 
             <>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <img src={playerSummary.picture} width="64" height="64"/>
+                <img alt='player' src={playerSummary.picture} width="64" height="64"/>
                 <div>
                   <h3>{`${playerSummary.nameFirst} ${playerSummary.nameLast} -- ${playerSummary.organization}`}</h3>
                   <p>{`${playerSummary.nameFirst} is ${playerSummary.age}-year-old, ${playerSummary.handedness.toLowerCase()} handed, and plays the ${playerSummary.position.toLowerCase()} position.`}</p>
